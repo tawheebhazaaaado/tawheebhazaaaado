@@ -1,0 +1,329 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+direction: rtl;
+background-color:white;
+font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+header{
+  width: 100vw;
+  height: 14vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #673ab7;
+  border-radius: 4vw 3vw 1vw 1vw;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 2vw 2vw white;
+}
+
+button:hover{
+  scale: 1.1;
+}
+header .titile{
+  width: 25vw;
+  height: 10vw;
+  border-radius: 10vw 6px;
+  background-color: white;
+  box-shadow: 3px 3px 10px rgb(49, 49, 49);
+  overflow: hidden;
+}
+header .titile h1{
+    font-size: 3vw;
+    padding: 10px;
+    color:#673ab7;
+    background-color:white;
+    height: 10vw;
+   
+}
+ header aside {
+  list-style: none;
+  width: 15vw;
+    height: 60vh;
+  background-color: #673ab7;
+  position: absolute;
+  top: 14vw;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px 10px 10px 10px;
+  gap: 20px;
+  opacity: 0;
+  overflow: auto;
+  transition: 1s;
+  z-index: 99;
+}
+header aside a{
+  height: calc(100% /4);
+  border-bottom: 2px solid white;
+  border-radius: 10%;
+}
+
+header button:focus + aside{
+  opacity: 1;
+}
+
+li a:hover{
+  background-color:blueviolet;
+  width: 100%;
+  border-radius: 20px;
+  text-align: center;
+
+}
+  header button{
+    width: 20vw;
+    border: none;
+    cursor: pointer;
+    border-radius: 106px 5px;
+    height: 22vh;
+    /* font-size: 16px; */
+    font-weight: 700;
+    box-shadow: 0 0 10px rgb(82, 81, 81);
+    color: black;
+    font-size: 3vwx;
+    /* line-height: 1; */
+    transition: .9s;
+    overflow: hidden;
+}
+.material-symbols-outlined{
+  color: #673ab7;
+  font-size: 5vw;
+}
+
+i{
+font-size: 5vw;
+color: #673ab7;
+}
+button a{
+  font-size: 50px;
+  width: 100%;
+}
+
+ .bu1{
+    color: rgb(19, 19, 19);
+    transition: 1s;
+    font-size: 30px;
+    line-height: 30px;
+}
+header nav{
+  list-style: none;
+    width: 15vw;
+    height: 60vh;
+    background-color: #673ab7;
+    position: absolute;
+    top: 14vw;
+    left: 0px;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    gap: 20px;
+    overflow: auto;
+    z-index: 99;
+    transition: 1s;
+    opacity: 0;
+}
+header nav li{
+  width: 100%;
+    height: calc(100% /6);
+    line-height: 40px;
+    border-bottom: 1px solid white;
+}
+
+header button:focus + .box{
+    opacity: 1;
+    }
+    nav li:hover{
+      background-color:blueviolet;
+      width: 100%;
+      border-radius: 10%;
+    }
+a{
+    text-decoration: none;
+    font-size: 30px;
+    color:white;
+    font-weight: 700;
+}
+@media (max-width:412px){
+  *{
+    margin:  0;
+    padding: 0;
+  }
+  header{
+    width: 100vw;
+    height: 10vh;
+    overflow: hidden;
+  }
+  
+header .h1{
+    width: 30vw;
+    height: 20vh;
+    font-size: 40px;
+  }
+  header aside {
+    width: 30%;
+    height: 80vh;
+    top: 10%;
+    font-size: 10px;
+  }
+  header button{
+    width: 18vw;
+    border: none;
+    cursor: pointer;
+    border-radius: 10vw 0 10vw 0;
+    height: 6vh;
+    font-weight: 700;
+    box-shadow: 0 0 10px white;
+    color: black;
+    font-size: 7vw;
+    line-height: 40px;
+    transition: .9s;
+  }
+  header button span{
+    font-size: 40px;
+  }
+  header aside {
+    width: 25%;
+    height: 80vh;
+    top: 10%;
+  }
+
+  header nav{
+    width: 20%;
+    height: 60vh;
+    top: 10%;
+    left: -12px;
+   
+  }
+  .phone h2{
+   width: 50%;
+  }
+.mar2 h2{
+    width: 50%;
+}
+.section img{
+   width: calc(85% /2);
+   height: 100px;
+    box-shadow: 1px 1px 3px #222;
+}
+    
+}
+@media (max-width:890px){
+header .h1{
+  width: 30vw;
+  height: 20vh;
+  font-size: 30px;
+}
+header aside {
+  width: 20%;
+  height: 60vh;
+  top: 12%;
+  font-size: 10px;
+  overflow: hidden;
+}
+.material-symbols-outlined{
+  color: #673ab7;
+  font-size: 5vw;
+}
+
+}
+@media (max-width:569px){
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  header{
+    width: 100vw;
+    height: 15vh;
+    overflow: hidden;
+  }
+  
+header .titile{
+    width: 35vw;
+    height: 8vh;
+    
+}
+  header .titile h1{
+  font-size: 4vw;
+  padding: 10px;
+  }
+  header button{
+    width: 20vw;
+    border: none;
+    cursor: pointer;
+    border-radius: 10vw 0 10vw 0;
+    height: 8vh;
+    /* font-size: 16px; */
+    font-weight: 700;
+    box-shadow: 0 0 10px black;
+    color: black;
+    font-size: 3vw;
+    /* line-height: 1; */
+  }
+  header button span{
+    font-size: 40px;
+  }
+  header aside {
+    width: 20%;
+    height: 60vh;
+    top: 12%;
+    font-size: 5px;
+    overflow: auto;
+  }
+
+  header nav{
+    width: 23%;
+    height: 60vh;
+    top: 12%;
+    left: 5px;
+    overflow: auto;
+  }
+  .phone h2{
+width: 50%;
+padding: 10px;
+  }
+  .mar2 h2{
+    width: 50%;
+      }
+      .section img{
+        width: calc(80% /2);
+        height: 10vh;
+        box-shadow: 1px 1px 3px #222;
+      }
+    
+      .pri div button{
+        margin-bottom: -8px;
+        height: 10vh;
+      }
+      .pri div button p{
+       left: -10px; 
+      }
+    
+}
+@media (max-width:300px){
+  /* .pri div span{
+  font-size:10px;
+
+  } */
+  footer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #673ab7;
+    text-align: center;
+    color: white;
+    font-size: 5vw;
+    padding: 5px;
+    gap: 1vw;
+    /* margin-top: 20%; */
+    bottom: 0;
+    margin-top: 20px;
+    border-radius: 10vw 6vw 0 0;
+  }
+}
